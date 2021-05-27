@@ -1,1 +1,11 @@
-<h1>Index list</h1>
+<div class= "navbar">
+  <h1>My movie list</h1>
+</div>
+
+  <ul>
+    <% @lists.each do |list| %>
+    <li><%= link_to list.name, list_path(list) %></li>
+    <% end %>
+  </ul>
+
+  <%= link_to 'Add a new list', new_list_path %>
