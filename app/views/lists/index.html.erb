@@ -4,6 +4,7 @@
     <h1>My movie list</h1>
     <%=  link_to 'Add a new list', new_list_path, class: "btn btn-ghost" %>
   </div>
+  <p><span id="banner-typed-text"></span></p>
 </div>
 
 <div class="cards">
@@ -11,3 +12,8 @@
     <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://images.unsplash.com/photo-1521985429101-21bed8b75e47?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80)"><%= link_to list.name, list_path(list) %></div>
     <% end %>
 </div>
+
+
+<p>
+  <span id="banner-typed-text"></span>
+</p>

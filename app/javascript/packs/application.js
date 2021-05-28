@@ -16,3 +16,11 @@ import 'bootstrap';
 //
 // const images = require.context('../images', true)
 // const imagePath = (name) => images(name, true)
+
+import { loadDynamicBannerText } from '../packs/index';
+
+// document.addEventListener('turbolinks:load'() => {
+//   loadDynamicBannerText();
+// });
+
+
