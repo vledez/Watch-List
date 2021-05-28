@@ -1,5 +1,9 @@
-<div class= "navbar">
-  <h1>My movie list</h1>
+
+<div class= "banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://images.unsplash.com/photo-1508778552286-12d4c6007799?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=750&q=80);">
+  <div class="container" >
+    <h1>My movie list</h1>
+    <%=  link_to 'Add a new list', new_list_path, class: "btn btn-ghost" %>
+  </div>
 </div>
 
 <div class="cards">
@@ -7,9 +11,3 @@
     <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://images.unsplash.com/photo-1521985429101-21bed8b75e47?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80)"><%= link_to list.name, list_path(list) %></div>
     <% end %>
 </div>
-
-  <%= link_to 'Add a new list', new_list_path %>
-
-
-
-
